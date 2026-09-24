@@ -1,50 +1,69 @@
-<div align="center">
-  
-  ## EcoAventuras
-  Jogo Educacional utilizando Alegro
+# EcoAventuras
 
-  ## Integrantes
-Renan Horta
+Jogo educacional desenvolvido em **C** com a biblioteca **Allegro 5**. O jogador controla um sapo explorador e percorre cenários inspirados nos biomas brasileiros enquanto responde perguntas sobre fauna, flora, preservação e características ambientais.
 
-Henrique Samecima
+## Objetivo
 
-Walison Moura
+O EcoAventuras busca ensinar educação ambiental por meio da exploração. Cada fase apresenta um cenário próprio, obstáculos, animais e perguntas relacionadas ao bioma visitado.
 
-Pedro Bertanhi
+## Biomas presentes
 
-  ## Sobre o Projeto
+- Amazônia
+- Pantanal
+- Pampa
+- Caatinga
 
-  Nosso jogo "EcoAventuras" é um jogo educacional e interativo que leva os jogadores a explorarem, aprender e preservar os biomas brasileiros. Cada fase traz desafios ambientais, que ensinam sobre a fauna, flora e ecossistemas únicos do Brasil.
-  
-  O jogador assume o papel de um explorador ambiental designado para proteger e conhecer os biomas brasileiros. Conforme avança, o jogador aprende sobre os desafios de cada bioma e se torna um verdadeiro "guardião da natureza".
-  
-  ### Queremos que o jogador sinta:
+## Funcionalidades
 
-•	Curiosidade: Ao explorar os biomas e descobrir sua biodiversidade.
+- Seleção de mapas por bioma.
+- Movimentação de personagem com animações.
+- Perguntas de múltipla escolha distribuídas pelos cenários.
+- Áreas bloqueadas e colisões específicas de cada mapa.
+- Animais com movimentação própria, como bois e jacarés.
+- Menu, configurações de som e telas informativas sobre os biomas.
+- Imagens, fonte e trilha sonora integradas ao jogo.
 
-•	Responsabilidade: Por ser o protetor da natureza e tomar decisões que afetam o ambiente.
+## Tecnologias
 
-•	Empatia: Ao cuidar dos ecossistemas e entender a importância de cada bioma.
+- Linguagem C
+- Allegro 5.2.9
+- Allegro Image, Primitives, Audio, Acodec, Font e TTF
+- Visual Studio com plataforma C++
+- NuGet para os pacotes Allegro e AllegroDeps
 
-### Palavras-chave:
+## Executar no Windows
 
-•	Educação ambiental
+1. Clone o repositório:
 
-•	Sustentabilidade
+```bash
+git clone https://github.com/pedrobertanhi/Ecoaventuras.git
+```
 
-•	Biomas
+2. Abra `jogo-biomas-pi.sln` no Visual Studio.
+3. Restaure os pacotes NuGet da solução.
+4. Confirme se o projeto está usando o toolset compatível com o Visual Studio instalado.
+5. Compile e execute mantendo as imagens, a fonte e o áudio nos caminhos esperados pelo projeto.
 
-•	Natureza
+O arquivo de projeto atual usa o toolset `v143`, disponível no Visual Studio 2022, e o SDK do Windows 10.
 
-  ### Mecânicas
-•	Exploração interativa: O jogador navega por mapas dos biomas, explora suas regiões e coleta informações sobre fauna e flora.
+## Estrutura principal
 
-•	Decisões ecológicas: O jogador enfrenta dilemas ambientais, como o combate ao desmatamento ou a preservação de espécies ameaçadas.
+| Arquivo ou pasta | Responsabilidade |
+| --- | --- |
+| `main.c` | Fluxo principal, telas, biomas e perguntas |
+| `movimento.c` | Movimento geral do personagem |
+| `movimento_sapo.c` | Lógica e animação do sapo |
+| `movimento_boi.c` | Movimento dos bois |
+| `movimento_jacare.c` | Movimento dos jacarés |
+| `recusos_allegro.c` | Inicialização e carregamento de recursos |
+| `liberar_recursos.c` | Liberação dos recursos do Allegro |
+| `*.png`, `*.jpg`, `*.jpeg` | Cenários, personagens e elementos visuais |
+| `menu.ogg` | Áudio do menu |
+| `jogo-biomas-pi.sln` | Solução do Visual Studio |
 
-### Características Principais
+## Equipe
 
-•	Temática educativa: Enfoca os biomas do Brasil, promovendo o aprendizado ecológico.
-
-•	Multifases: Cada fase explora um bioma brasileiro, com cenários únicos e missões distintas.
-
-•	Gráficos e sons envolventes: Uso de cenários e sons que representam a biodiversidade de cada bioma, como o canto de aves, rugidos de animais, e sons de florestas.
+- Renan Horta
+- Henrique Samecima
+- Walison Moura
+- Pedro Bertanhi
