@@ -2,6 +2,9 @@
 
 Jogo educacional desenvolvido em **C** com a biblioteca **Allegro 5**. O jogador controla um sapo explorador e percorre cenários inspirados nos biomas brasileiros enquanto responde perguntas sobre fauna, flora, preservação e características ambientais.
 
+<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/5deaeff0-9dcf-4a43-ae83-bb2ace30ad80" />
+
+
 ## Objetivo
 
 O EcoAventuras busca ensinar educação ambiental por meio da exploração. Cada fase apresenta um cenário próprio, obstáculos, animais e perguntas relacionadas ao bioma visitado.
